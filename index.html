@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    
+    <div class="body-secetion">
+        <div class="body-container">
+            <div class="body-content">
+                <input type="text" name="" id="result">
+                <div class="btn-section-one">
+                    <button class="ac" onclick="document.getElementById('result').value =''"> AC </button>
+                    <button onclick=" document.getElementById('result').value +='('"> ( </button>
+                    <button onclick=" document.getElementById('result').value +=')'"> ) </button>
+                    <button onclick=" document.getElementById('result').value +='/'"> / </button>
+                </div>  
+                <div class="btn-section-two">
+                    <button onclick="document.getElementById('result').value +='7'"> 7 </button>
+                    <button onclick="document.getElementById('result').value +='8'"> 8 </button>
+                    <button onclick="document.getElementById('result').value +='9'"> 9 </button>
+                    <button class="multiply" onclick=" document.getElementById('result').value +='*'"> x </button>
+                </div> 
+                <div class="btn-section-three">
+                    <button onclick="document.getElementById('result').value +='4'"> 4 </button>
+                    <button onclick="document.getElementById('result').value +='5'"> 5 </button>
+                    <button onclick="document.getElementById('result').value +='6'"> 6 </button>
+                    <button class="minus" onclick=" document.getElementById('result').value +='-'"> - </button>
+                </div>   
+                <div class="btn-section-four">
+                    <button onclick="document.getElementById('result').value +='1'"> 1 </button>
+                    <button onclick="document.getElementById('result').value +='2'"> 2 </button>
+                    <button onclick="document.getElementById('result').value +='3'"> 3 </button>
+                    <button class="pluse" onclick=" document.getElementById('result').value +='+'"> + </button>
+                </div> 
+                <div class="btn-section-five">
+                    <button onclick="document.getElementById('result').value +='0'"> 0 </button>
+                    <button onclick="document.getElementById('result').value +='.'"> . </button>
+                    <button class="equal-to" onclick="document.getElementById('result').value = eval (document.getElementById('result').value)"> = </button>
+                    
+                    
+                </div>   
+            </div>      
+            
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
