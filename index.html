@@ -15,9 +15,9 @@
                 <input type="text" name="" id="result">
                 <div class="btn-section-one">
                     <button class="ac" onclick="document.getElementById('result').value =''"> AC </button>
+                    <button onclick=" document.getElementById('result').value = document.getElementById('result').value.slice(0, -1)" > C </button>
                     <button onclick=" document.getElementById('result').value +='('"> ( </button>
                     <button onclick=" document.getElementById('result').value +=')'"> ) </button>
-                    <button onclick=" document.getElementById('result').value +='/'"> / </button>
                 </div>  
                 <div class="btn-section-two">
                     <button onclick="document.getElementById('result').value +='7'"> 7 </button>
@@ -40,6 +40,7 @@
                 <div class="btn-section-five">
                     <button onclick="document.getElementById('result').value +='0'"> 0 </button>
                     <button onclick="document.getElementById('result').value +='.'"> . </button>
+                    <button onclick="document.getElementById('result').value +='/'"> / </button>
                     <button class="equal-to" onclick="document.getElementById('result').value = eval (document.getElementById('result').value)"> = </button>
                     
                     
